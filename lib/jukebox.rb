@@ -24,6 +24,8 @@ def play(songs)
   choice = gets.chomp
   if choice.to_i >=1 && choice.to_i <= songs.length
     puts "Playing #{songs[choice.to_i-1]}"
+  elsif songs.include?(choice)
+    puts "Playing #{songs.find{|song| song == choice}}"
   else
     puts "Invalid input, please try again"
   end
