@@ -19,6 +19,12 @@ def help
   puts "- exit : exits this program"
 end
 
+def list(songs)
+songs.each_with_index {|song, index|
+  puts "#{index+1}. #{song}"
+}
+end
+
 def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.chomp
