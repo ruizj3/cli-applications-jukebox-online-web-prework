@@ -21,3 +21,4 @@ end
 
 def play(choice)
   puts "Please enter a song name or number."
+  choice = gets.chomp
