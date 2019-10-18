@@ -19,7 +19,7 @@ def help
   puts "- exit : exits this program"
 end
 
-def play(choice)
+def play(songs)
   puts "Please enter a song name or number."
   choice = gets.chomp
   if choice.to_i >=1 && choice.to_i <= songs.length
